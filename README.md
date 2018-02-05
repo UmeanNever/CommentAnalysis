@@ -15,18 +15,18 @@ To run the Django project, first you need to configure your environment to fulfi
 
 ### Requirements:
 
-+Python 2.7.12
-+Django 1.10
-+Python package:
-..+snownlp
-..+numpy
-..+jieba
-..+genism
++ Python 2.7.12
++ Django 1.10
++ Python package:
+..+ snownlp
+..+ numpy
+..+ jieba
+..+ genism
 
 ### Recommended but not necessary:
 
-+Anaconda 4.1.1 32-bit, which includes the proper Python and Django version
-+Pycharm IDE, which is convenient to run Django.
++ Anaconda 4.1.1 32-bit, which includes the proper Python and Django version
++ Pycharm IDE, which is convenient to run Django.
 
 ### How To Run
 After you configure the environment, go to the directory of _\DjangoCodes\CommentAnalysis_ and open the command line there. Input the followings:
@@ -37,4 +37,4 @@ python manage.py startanalysis
 ```
 
 (If you use pycharm IDE, you need to open the folder as Django project and run it. And then find the terminal tab below and type ¡®python manage.py startanalysis¡¯)  
-Once the server is on and the analysis server is listening, you can let it do comment analysis through ¡®127.0.0.1:8000/CA/api?q=¡¯ now. For example, if you want to analyze the comments of product whose ID is 536499893821, you can try ¡®http://127.0.0.1:8000/CA/api?q=536499893821¡¯ in your browser. Then you should get the JSON result just the same as the sample JSON file attached. Notice that the POC could only analyze the product whose comments we have already crawled, have a look at this folder ¡®¡­\PycharmProjects\CommentAnalysis\CommentAnalysis\management\commands\analysis\tbcomment¡¯ to know the available product ID.
+Once the server is on and the analysis server is listening, you can let it do comment analysis through _127.0.0.1:8000/CA/api?q=_ now. For example, if you want to analyze the comments of product whose ID is 536499893821, you can try _http://127.0.0.1:8000/CA/api?q=536499893821_ in your browser. Then you should get the JSON result just the same as the sample JSON file attached. Notice that the POC could only analyze the product whose comments we have already crawled, have a look at this folder ¡®¡­\PycharmProjects\CommentAnalysis\CommentAnalysis\management\commands\analysis\tbcomment¡¯ to know the available product ID.
